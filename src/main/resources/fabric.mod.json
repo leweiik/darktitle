@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "leweiiktitle",
+  "version": "${version}",
+  "name": "Leweiik Title",
+  "description": "Pixel-art fire title screen with a Press to Enter start, custom stickers and in-game settings.",
+  "authors": ["leweiik"],
+  "license": "MIT",
+  "icon": "assets/leweiiktitle/icon.png",
+  "environment": "client",
+  "mixins": ["leweiiktitle.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}

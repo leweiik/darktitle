@@ -1,11 +1,20 @@
-Dark Title (Fabric, Minecraft 1.21.11, client-only)
+Leweiik Title (Fabric, Minecraft 1.21.11, client-only)
 
-1. Install JDK 21 and Gradle (or copy gradlew, gradlew.bat and the gradle/ folder
-   from a template made at https://fabricmc.net/develop/template).
-2. If you have no wrapper yet:   gradle wrapper --gradle-version 9.2.1
-3. Test in-game:                 ./gradlew runClient
-4. Build the jar:                ./gradlew build   ->  build/libs/darktitle-1.0.0.jar
-   (use the jar WITHOUT "-sources" in its name)
+Pixel-art fire title screen: layered flames (yellow core, orange body, red tips), fire walls
+on the left and right edges, rising embers, a "Press to Enter" start, and your own stickers.
 
-Tweak the look in src/main/java/com/example/darktitle/DarkTitleRenderer.java
-(DARKNESS, PARTICLES, DRIFT).
+IN-GAME SETTINGS
+  Main menu -> "Fire Settings" (top-left). Changes show live behind the settings screen.
+  Fire speed, fire height, side fire, glow, embers, ember speed, pixel detail, sticker size,
+  and a switch for the Press to Enter screen. Saved in config/leweiiktitle.properties.
+
+STICKERS (your own images)
+  Put PNG files in:  <game folder>/config/leweiiktitle/
+    left.png   -> shown on the left
+    right.png  -> shown on the right (if missing, left.png is mirrored)
+  The folder is created the first time you launch the game. Changes are picked up
+  within a few seconds, no restart needed. Transparent PNGs work best.
+
+BUILD
+  Push to GitHub and download the "darktitle-jar" artifact from the Actions tab
+  (the jar inside is named leweiiktitle-1.1.0.jar), or run  ./gradlew build  locally (JDK 21).
